@@ -1,0 +1,66 @@
+GET http://127.0.0.1:5000/clientes
+
+###
+
+POST http://127.0.0.1:5000/clientes
+Content-Type: application/json
+
+{
+    "email": "teste_alterado",
+    "primeiro_nome": "teste_alt",
+    "ultimo_nome": "teste_a"
+}
+
+###
+
+GET http://127.0.0.1:5000/cliente/4
+
+###
+
+PUT http://127.0.0.1:5000/cliente/5
+Content-Type: application/json
+
+{
+    "email": "teste_alterado",
+    "primeiro_nome": "teste_alt",
+    "ultimo_nome": "teste_a"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/cliente/5
+
+###
+
+GET http://127.0.0.1:5000/pedidos
+
+###
+POST http://127.0.0.1:5000/pedidos
+Content-Type: application/json
+
+{
+    "data": "22/05/2000",
+    "status": "ok",
+    "id_cliente": 6,
+    "valor": 50
+}
+
+###
+
+GET http://127.0.0.1:5000/pedido/50
+
+###
+
+PUT http://127.0.0.1:5000/pedido/100
+Content-Type: application/json
+
+{
+    "data": "22/01/1991",
+    "status": "em andamento",
+    "id_cliente": 6,
+    "valor": 500
+}
+
+###
+
+DELETE http://127.0.0.1:5000/pedido/1
